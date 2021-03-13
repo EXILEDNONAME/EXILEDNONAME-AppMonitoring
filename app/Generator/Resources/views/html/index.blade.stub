@@ -1,0 +1,8 @@
+@extends('layouts.pages.index', ['page' => 'index'])
+@push('title', '%%crudNameCap%%')
+
+@push('content-head')
+%%formHeadingHtml%%@endpush
+
+@push('content-body')
+%%formBodyHtml%%@endpush

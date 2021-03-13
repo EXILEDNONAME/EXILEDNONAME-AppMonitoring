@@ -1,0 +1,7 @@
+<div class="form-group row">
+    <label class="col-lg-3 col-form-label"> {{ %2$s }} </label>
+    <div class="col-lg-9">
+      %3$s      {!! $errors->first('%1$s', '<p class="help-block">:message</p>') !!}
+    </div>
+  </div>
+   

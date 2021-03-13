@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
+{{useSoftDeletes}}
+class DummyClass extends Model {
+  {{softDeletes}}
+  use LogsActivity;
+
+  protected $table = '{{table}}';
+  protected $primaryKey = 'id';
+  protected $guarded = ['id'];
+
+  protected static $logAttributes = ['*'];
+
+  {{relationships}}
+}

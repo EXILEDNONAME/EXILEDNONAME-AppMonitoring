@@ -1,0 +1,10 @@
+@extends('layouts.pages.show', ['page' => 'show'])
+@push('title', '%%modelName%%')
+
+@push('content-body')
+<div class="table-responsive">
+  <table width="100%" class="table table-stiped table-bordered">
+  %%formBodyHtmlForShowView%%
+  </table>
+</div>
+@endpush

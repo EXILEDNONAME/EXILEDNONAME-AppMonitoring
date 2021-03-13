@@ -1,0 +1,2 @@
+<textarea class="form-control" rows="5" name="%%itemName%%" type="%%fieldType%%" id="%%itemName%%" %%required%%>{{ isset($%%crudNameSingular%%->%%itemName%%) ? $%%crudNameSingular%%->%%itemName%% : ''}}</textarea>
+{!! Form::textarea('%%itemName%%', (isset($data->%%itemName%%) ? $data->%%itemName%% : ''), ('%%required%%' == 'required') ? ['class' => 'form-control', 'rows' => '3', 'required' => 'required'] : ['class' => 'form-control', 'rows' => '3']) !!}
