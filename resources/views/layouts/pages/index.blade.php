@@ -184,6 +184,9 @@
 <script src="/assets/backend/js/pages/crud/forms/widgets/bootstrap-datepicker.js?v=7.0.5"></script>
 <script src="/assets/backend/js/pages/crud/datatables/search-options/advanced-search.js?v=7.0.5"></script>
 <script>
+$("#toast-container").toast({ delay: 5000 });
+$("#toast-container").toast('show');
+
 "use strict";
 var KTDatatablesExtensionsKeytable = function() {
 
